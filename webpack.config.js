@@ -10,7 +10,9 @@ module.exports = {
   },
   mode: "development",
   devtool: "inline-source-map",
-  devServer: "./dist",
+  devServer: {
+    static: "./dist",
+  },
   module: {
     rules: [
       {
@@ -26,7 +28,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "BMI Calculator",
-      template: ".src/index.html",
+      template: "src/index.html",
     }),
   ],
 };
