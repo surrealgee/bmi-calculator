@@ -7,8 +7,8 @@
   </head>
   <body>
     <section class="top">
-      <img src="./assets/images/logo.svg" alt="bmi's logo" class="logo" />
       <div class="content">
+        <img src="./assets/images/logo.svg" alt="bmi's logo" class="logo" />
         <h1>Body Mass Index Calculator</h1>
         <p>
           Better understand your weight in relation to your height using our
@@ -20,7 +20,7 @@
       <div class="calc-box">
         <h3>Enter your details below</h3>
         <form action="#" class="form">
-          <fieldset>
+          <fieldset class="metric-box">
             <label for="metric"
               ><input type="radio" name="measure" id="metric" value="metric" />
               Metric
@@ -35,14 +35,16 @@
               Imperial
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="measures-box">
             <div>
               <label for="height">Height</label>
               <input type="number" name="height" id="height" />
+              <span class="measure-unit">cm</span>
             </div>
             <div>
               <label for="weight">Weight</label>
               <input type="number" name="weight" id="weight" />
+              <span class="measure-unit">kg</span>
             </div>
           </fieldset>
         </form>

@@ -9,6 +9,8 @@ import muscleIcon from "./assets/images/icon-muscle.svg";
 import pregnancyIcon from "./assets/images/icon-pregnancy.svg";
 import raceIcon from "./assets/images/icon-race.svg";
 
+import "./style.css";
+
 function imageLoader() {
   document.querySelector(".logo").src = logo;
   document.querySelector(".img-man-eating").src = img;
