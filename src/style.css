@@ -27,6 +27,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-block-end: 1em;
 }
 
 h3 {
@@ -46,7 +47,6 @@ h4 {
 
 p {
   line-height: 1.5;
-  margin: 1rem;
   color: #5e6e85;
 }
 
@@ -203,4 +203,31 @@ input[type="radio"]:checked::before {
 
 .results_message p span {
   font-weight: 700;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5em;
+}
+
+.middle_upper .content {
+  padding: 0 1.5em;
+}
+
+.middle_lower {
+  padding: 3.5em 1.5em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.img-man-eating {
+  margin-block-end: 3em;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5em;
 }
