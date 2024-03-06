@@ -21,29 +21,38 @@
         <h3>Enter your details below</h3>
         <form action="#" class="form">
           <fieldset class="metric-box">
-            <label for="metric"
-              ><input type="radio" name="measure" id="metric" value="metric" />
-              Metric
-            </label>
-            <label for="imperial"
-              ><input
-                type="radio"
-                name="measure"
-                id="imperial"
-                value="imperial"
-              />
-              Imperial
-            </label>
+            <div class="metric-box-item">
+              <label for="metric"
+                ><input
+                  type="radio"
+                  name="measure"
+                  id="metric"
+                  value="metric"
+                />
+                Metric
+              </label>
+            </div>
+            <div class="metric-box-item">
+              <label for="imperial"
+                ><input
+                  type="radio"
+                  name="measure"
+                  id="imperial"
+                  value="imperial"
+                />
+                Imperial
+              </label>
+            </div>
           </fieldset>
           <fieldset class="measures-box">
             <div>
               <label for="height">Height</label>
-              <input type="number" name="height" id="height" />
+              <input type="number" name="height" id="height" placeholder="0" />
               <span class="measure-unit">cm</span>
             </div>
             <div>
               <label for="weight">Weight</label>
-              <input type="number" name="weight" id="weight" />
+              <input type="number" name="weight" id="weight" placeholder="0" />
               <span class="measure-unit">kg</span>
             </div>
           </fieldset>

@@ -53,7 +53,6 @@ p {
 /* Layout */
 
 .top .content {
-  background-color: rgb(214, 230, 254);
   background-image: linear-gradient(
     300deg,
     rgba(214, 230, 254, 1) 0%,
@@ -69,7 +68,7 @@ p {
   background-color: #fff;
   padding: 1.5em;
   width: 87.46%;
-  margin: -200px auto 4.5em;
+  margin: -175px auto 4.5em;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -97,7 +96,7 @@ fieldset {
 .metric-box label {
   display: grid;
   gap: 1.125em;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 32px auto;
   align-items: center;
   font-weight: 700;
   line-height: 1.1;
@@ -266,4 +265,46 @@ input[type="radio"]:checked::before {
 
 .fact p {
   grid-column: 1 / -1;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  h1 {
+    max-width: 14ch;
+    margin: 2rem auto;
+  }
+
+  .calc-box {
+    align-items: stretch;
+    padding: 2em;
+    gap: 2em;
+  }
+
+  .metric-box {
+    justify-content: start;
+  }
+
+  .metric-box-item {
+    flex: 1;
+  }
+
+  .measures-box {
+    flex-direction: row;
+    gap: 1.5em;
+  }
+
+  .results {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 999px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 999px;
+    align-items: center;
+  }
+
+  .results * {
+    flex: 1;
+  }
 }
