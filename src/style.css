@@ -307,4 +307,34 @@ input[type="radio"]:checked::before {
   .results * {
     flex: 1;
   }
+
+  .middle_upper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 1em;
+    justify-content: start;
+  }
+
+  .img-man-eating {
+    width: 50%;
+    position: relative;
+    left: -50px;
+  }
+
+  .middle_lower {
+    padding: 3.5em 2.5em;
+  }
+
+  .tip {
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-rows: repeat(2, 50px);
+    gap: 1.5em 3em;
+    align-items: center;
+  }
+
+  .tip img {
+    grid-row: 1 / -1;
+  }
 }
