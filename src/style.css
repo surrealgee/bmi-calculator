@@ -337,4 +337,18 @@ input[type="radio"]:checked::before {
   .tip img {
     grid-row: 1 / -1;
   }
+
+  .bottom {
+    padding: 4.5em 2.5em;
+  }
+
+  .facts {
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    position: relative;
+  }
+
+  .facts .fact:last-child {
+    position: relative;
+    left: 50%;
+  }
 }
