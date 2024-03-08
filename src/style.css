@@ -357,13 +357,15 @@ input[type="radio"]:checked::before {
   .top {
     display: flex;
     position: relative;
+    padding-inline-end: 9.75vw;
   }
 
   .top .content {
-    padding: 4.68em 7.25em 12.5em;
+    padding: 4.68em 9.75vw 12.5em;
     text-align: start;
-    min-width: 68%;
+    min-width: 68vw;
     min-height: 737px;
+    margin-block-end: 4em;
   }
 
   h1 {
@@ -378,10 +380,34 @@ input[type="radio"]:checked::before {
 
   .calc-box {
     margin: 0;
-    width: 40%;
+    width: 40vw;
     min-height: 484px;
     position: absolute;
     left: 51%;
     top: 166px;
+  }
+
+  .middle_upper {
+    justify-content: space-between;
+    padding: 0 9.75vw;
+  }
+
+  .img-man-eating {
+    left: 0;
+  }
+
+  .middle_lower {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4.5em 9.75vw;
+  }
+
+  .tip {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .tip p {
+    max-width: 45ch;
   }
 }
