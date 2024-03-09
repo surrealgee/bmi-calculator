@@ -269,7 +269,7 @@ input[type="radio"]:checked::before {
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 781px) {
   h1 {
     max-width: 14ch;
     margin: 2rem auto;
@@ -347,13 +347,13 @@ input[type="radio"]:checked::before {
     position: relative;
   }
 
-  .facts .fact:last-child {
+  .fact:last-child {
     position: relative;
     left: 50%;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1150px) {
   .top {
     display: flex;
     position: relative;
@@ -409,5 +409,51 @@ input[type="radio"]:checked::before {
 
   .tip p {
     max-width: 45ch;
+  }
+
+  .bottom {
+    padding: 7.5em 9.75vw;
+    position: relative;
+  }
+
+  .bottom .content {
+    text-align: start;
+  }
+
+  .facts {
+    position: static;
+    min-height: 400px;
+    padding-block-end: 120px;
+  }
+
+  .fact {
+    position: absolute;
+    max-width: 25.35vw;
+  }
+
+  .fact:first-child {
+    top: 120px;
+    left: 58.05vw;
+  }
+
+  .fact:nth-child(2) {
+    left: 37.36vw;
+    top: 350px;
+  }
+
+  .fact:nth-child(3) {
+    left: 64.93vw;
+    top: 350px;
+  }
+
+  .fact:nth-child(4) {
+    left: 23.54vw;
+    top: 550px;
+  }
+
+  .fact:last-child {
+    left: 51.11vw;
+    top: 550px;
+    position: absolute;
   }
 }
